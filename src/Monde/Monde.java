@@ -26,6 +26,20 @@ public class Monde {
     }
   }
 
+  public int getnbL(){
+    return this.nbL;
+  }
+  public int getnbC(){
+    return this.nbC;
+  }
+
+  public void setnbL(int nbL){
+    this.nbL = nbL;
+  }
+  public void setnbC(int nbC){
+    this.nbC = nbC;
+  }
+
   public void afficher() {
     for (int i = 0; i < this.nbL; i++) {
       for (int j = 0; j < this.nbC; j++) {
