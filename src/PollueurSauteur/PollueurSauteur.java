@@ -1,8 +1,8 @@
-package Robot_Pollueur.src.PolleurSauteur;
+package Robot_Pollueur.src.PollueurSauteur;
 
 import Robot_Pollueur.src.Monde.Monde;
 import Robot_Pollueur.src.Robot.Robot;
-import Robot_Pollueur.src.RobotPolleur.RobotPolleur;
+import Robot_Pollueur.src.RobotPollueur.RobotPollueur;
 
 public class PollueurSauteur extends RobotPollueur {
     private int deltax; // Taille du saut à chaque déplacement
@@ -17,21 +17,23 @@ public class PollueurSauteur extends RobotPollueur {
 
     @Override 
     public void parcourir() {
-        this.posx = 0;
-        this.posy = 2; // colonne de depart dans parcourir() de Robot genere automatiquement donc j'ai pris 2 comme exemple, on en reparlera
+        
 
-	int i= this.posx;
+	int i= 0;
 	int j= this.posy;  
 
-        while (i < m.nbL && j < m.nbC) { 
-            m.metPapierGras(i,j); // Pour mettre un papier gras 
+        while (i < m.getnbL() && j < m.getnbC()) { 
+            m.metPapierGras(i,j);
+            // Pour mettre un papier gras 
             i++;
+            
 	    
-	    if (j > m.nbC) {
+	    if (j > m.getnbC()) {
 		j = 0;
 	     } else j += this.deltax;
 
 
         }
+
     }
 }

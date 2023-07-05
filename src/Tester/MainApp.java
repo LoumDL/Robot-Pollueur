@@ -1,5 +1,7 @@
 package Robot_Pollueur.src.Tester;
 
+import Robot_Pollueur.src.PollueurSauteur.PollueurSauteur;
+import Robot_Pollueur.src.PollueurToutDroit.PollueurToutDroit;
 import Robot_Pollueur.src.RobotPollueur.RobotPollueur;
 import Robot_Pollueur.src.Monde.Monde;
 import Robot_Pollueur.src.Robot.Robot;
@@ -15,7 +17,8 @@ public class MainApp {
     int compteur = monde.nbPapierGras();
     System.out.println(compteur);
 
-    RobotPollueur robP = new  RobotPollueur(10, 10, monde);
-    robP.polluer();
+    PollueurToutDroit pd = new PollueurToutDroit(4,monde);
+                      pd.parcourir();
+    PollueurSauteur ps = new PollueurSauteur(3,4,monde,5);
   }
 }

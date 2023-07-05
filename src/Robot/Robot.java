@@ -22,6 +22,10 @@ public abstract class Robot {
         this.m = m;
     }
 
+    public int getposy(){
+        return this.posy ;
+    }
+
     public void vaEn(int i, int j){
           this.posx = i;
           this.posy = j;
