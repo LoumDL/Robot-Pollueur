@@ -5,6 +5,7 @@ import Robot_Pollueur.src.PollueurToutDroit.PollueurToutDroit;
 import Robot_Pollueur.src.RobotPollueur.RobotPollueur;
 import Robot_Pollueur.src.Monde.Monde;
 import Robot_Pollueur.src.Robot.Robot;
+import Robot_Pollueur.src.RobotNettoyeur.RobotNettoyeur;
 
 public class MainApp {
 
@@ -20,5 +21,9 @@ public class MainApp {
     PollueurToutDroit pd = new PollueurToutDroit(4,monde);
                       pd.parcourir();
     PollueurSauteur ps = new PollueurSauteur(3,4,monde,5);
+    RobotNettoyeur rn = new RobotNettoyeur(monde);
+    rn.parcourir();
+    NettoyeurDistrait nd = new  NettoyeurDistrait(monde);
+    nd.parcourir();
   }
 }
