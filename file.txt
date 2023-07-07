@@ -1,1 +1,10 @@
 git pull origin FatouThiam --allow-unrelated-histories
+
+
+
+
+
+
+ javac  -d "../bin" *.java 
+
+ C:\Users\xxx\Documents\DIC1\SEMESTRE 2\JAVA\Robot-Pollueur\src> java -cp "../bin" plis.sarr.MainApp 
