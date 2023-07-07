@@ -1,0 +1,11 @@
+git pull origin FatouThiam --allow-unrelated-histories
+
+
+
+src> javac  -d "../bin" *.java 
+
+src> java -cp "../bin" plis.sarr.TestRobots
+
+src> javadoc *. java -d Doc
+
+src> jar cf MainApp.jar ../bin    
